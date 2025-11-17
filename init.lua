@@ -349,4 +349,8 @@ vim.keymap.set({ 'n' }, "zc", fold.close)
 vim.keymap.set({ 'n' }, "zg", fold.allMarkerRegion)
 vim.keymap.set({ 'n' }, "zG", fold.openAllMarkerRegion)
 vim.keymap.set({ 'n' }, "za", fold.toggle)
+
+--Enable device clipboard
+vim.api.nvim_set_option("clipboard", "unnamedplus")
+
 --#endregion keymap

@@ -1,12 +1,78 @@
 [
 	{
-		"key": "space",
-		"command": "whichkey.show",
-		"when": "sideBarFocus && !textInputFocus && !inputFocus"
+		"key": "ctrl+alt+j",
+		"command": "editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "shift+space",
-		"command": "whichkey.show",
-		"when": "textInputFocus || inputFocus"
+		"key": "ctrl+shift+alt+down",
+		"command": "-editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+alt+k",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+alt+up",
+		"command": "-editor.action.copyLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+f f",
+		"command": "editor.action.formatDocument"
+	},
+	{
+		"key": "ctrl+f r",
+		"command": "editor.action.startFindReplaceAction",
+		"when": "editorFocus || editorIsOpen"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "-editor.action.startFindReplaceAction",
+		"when": "editorFocus || editorIsOpen"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "workbench.explorer.openEditorsView.active || filesExplorerFocus && neovim.mode!='insert'"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "workbench.action.navigateUp",
+		"when": "neovim.mode!='insert'"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "workbench.files.action.focusOpenEditorsView",
+		"when": "filesExplorerFocus && neovim.mode!='insert'"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "workbench.action.navigateRight",
+		"when": "neovim.mode!='insert'"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "workbench.action.navigateDown",
+		"when": "neovim.mode!='insert'"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "workbench.files.action.focusFilesExplorer",
+		"when": "!editorFocus && workbench.explorer.openEditorsView.active && neovim.mode!='insert'"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "workbench.action.navigateLeft",
+		"when": "neovim.mode!='insert'"
+	},
+	{
+		"key": "ctrl+v",
+		"command": "-editor.action.clipboardPasteAction"
+	},
+	{
+		"key": "ctrl+shift+j",
+		"command": "workbench.action.terminal.toggleTerminal"
 	}
 ]
