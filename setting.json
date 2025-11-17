@@ -1,4 +1,6 @@
 {
+    "editor.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
     "editor.rulers": [
         {
             "column": 80,
@@ -11,6 +13,10 @@
     ],
     "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
     "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\sang.truong\\.config\\vscode-nvim\\init.lua",
+    "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/vscode-nvim/init.lua",
+    "vscode-neovim.neovimExecutablePaths.linux": "/home/linuxbrew/.linuxbrew/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/vscode-nvim/init.lua",
     "whichkey.delay": 200,
     "whichkey.bindings": [
         {
