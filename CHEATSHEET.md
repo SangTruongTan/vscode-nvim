@@ -91,8 +91,9 @@
 | Key | Action | Description |
 |-----|--------|-------------|
 | `<leader>i` | Organize Imports | Auto-organize imports |
+| `<leader>r` | Quick Fix | Show code actions/quick fixes |
+| `<leader>ra` | Refactor Menu | Show refactor options |
 | `<leader>rr` | Rename Symbol | Rename symbol/variable |
-| `<leader>r` | Refactor Menu | Show refactor options |
 | `<leader>rd` | Delete Block | Delete current block/function |
 | `<leader>rv` | Select Block | Select current block/function |
 | `<leader>rh` | Show Hover | Show hover information/documentation |

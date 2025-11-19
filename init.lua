@@ -35,9 +35,6 @@ local file = {
   rename = function()
     vim.fn.VSCodeNotify("workbench.files.action.showActiveFileInExplorer")
     vim.fn.VSCodeNotify("renameFile")
-  end,
-  showHover = function()
-    vim.fn.VSCodeNotify("editor.action.showHover")
   end
 }
 
@@ -229,6 +226,12 @@ local refactor = {
   showMenu = function()
     vim.fn.VSCodeNotify("editor.action.refactor")
   end,
+  showHover = function()
+    vim.fn.VSCodeNotify("editor.action.showHover")
+  end,
+  showCodeActions = function()
+    vim.fn.VSCodeNotify("editor.action.quickFix")
+  end,
 }
 
 -- https://vi.stackexchange.com/a/31887
@@ -310,11 +313,12 @@ vim.keymap.set({ 'n', 'v' }, "<leader>ts", toggle.toggleSideBarVisibility)
 vim.keymap.set({ 'n', 'v' }, "<leader>tt", toggle.theme)
 
 -- refactor
-vim.keymap.set({ 'n', 'v' }, "<leader>r", refactor.showMenu)
+vim.keymap.set({ 'n', 'v' }, "<leader>r", refactor.showCodeActions)
+vim.keymap.set({ 'n', 'v' }, "<leader>ra", refactor.showMenu)
 vim.keymap.set({ 'n' }, "<leader>rr", symbol.rename)
 vim.api.nvim_set_keymap('n', '<leader>rd', 'V%d', { silent = true })
 vim.api.nvim_set_keymap('n', '<leader>rv', 'V%', { silent = true })
-vim.keymap.set({ 'n' }, "<leader>rh", file.showHover)
+vim.keymap.set({ 'n' }, "<leader>rh", refactor.showHover)
 
 -- bookmark
 vim.keymap.set({ 'n' }, "<leader>m", bookmark.toggle)
