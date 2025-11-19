@@ -92,9 +92,10 @@
 |-----|--------|-------------|
 | `<leader>i` | Organize Imports | Auto-organize imports |
 | `<leader>rr` | Rename Symbol | Rename symbol/variable |
-| `<leader>r` | Refactor Menu | Show refactor options (visual mode) |
+| `<leader>r` | Refactor Menu | Show refactor options |
 | `<leader>rd` | Delete Block | Delete current block/function |
 | `<leader>rv` | Select Block | Select current block/function |
+| `<leader>rh` | Show Hover | Show hover information/documentation |
 | `<leader>/` | Toggle Comment | Comment/uncomment selection |
 
 ---
