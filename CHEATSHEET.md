@@ -195,15 +195,16 @@
 
 | Key | Action | Description |
 |-----|--------|-------------|
-| `Ctrl+Alt+J` | Copy Line Down | Duplicate line downward |
-| `Ctrl+Alt+K` | Copy Line Up | Duplicate line upward |
-| `Ctrl+F F` | Format Document | Auto-format current file |
 | `Ctrl+F R` | Find & Replace | Open find/replace dialog |
 | `Ctrl+H` | Focus Editor | Focus editor from explorer |
 | `Ctrl+K` | Navigate Up | Navigate to upper panel |
 | `Ctrl+L` | Navigate Right | Navigate to right panel |
 | `Ctrl+J` | Navigate Down | Navigate to lower panel |
 | `Ctrl+Shift+J` | Toggle Terminal | Show/hide terminal |
+| `Ctrl+Shift+K` | Next Terminal | Focus next terminal tab |
+| `Ctrl+Shift+L` | Previous Terminal | Focus previous terminal tab |
+| `Ctrl+Shift+W` | Kill Terminal | Close current terminal |
+| `Ctrl+Shift+A` | New Terminal | Create new terminal |
 
 ---
 
