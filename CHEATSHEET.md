@@ -31,6 +31,10 @@
 | `k` | Visual Line Up | Move up by visual lines (`gk`) |
 | `s` | Paragraph Down | Jump to next paragraph (`}`) |
 | `S` | Paragraph Up | Jump to previous paragraph (`{`) |
+| `gd` | Go to Definition | Jump to symbol definition |
+| `gD` | Peek Definition | Open inline definition view |
+| `g;` | Jump Back | Move to previous cursor location |
+| `g,` | Jump Forward | Move forward in navigation history |
 
 ---
 
