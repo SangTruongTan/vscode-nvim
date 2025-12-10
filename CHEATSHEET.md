@@ -72,6 +72,7 @@
 | `<leader>sR` | References Sidebar | Show references in sidebar |
 | `<leader>sp` | Search Project | Search in files (with selection) |
 | `<leader>st` | Search Text | Search in files |
+| `<leader>sf` | Find & Replace | Open find/replace in editor |
 | `<leader>n` | No Highlight | Clear search highlights |
 
 ---

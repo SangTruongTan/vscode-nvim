@@ -127,6 +127,9 @@ local search = {
 	text = function()
 		vim.fn.VSCodeNotify("workbench.action.findInFiles")
 	end,
+	findReplace = function()
+		vim.fn.VSCodeNotify("editor.action.startFindReplaceAction")
+	end,
 }
 
 local navigation = {
@@ -346,6 +349,7 @@ vim.keymap.set({ "n" }, "<leader>sr", search.reference)
 vim.keymap.set({ "n" }, "<leader>sR", search.referenceInSideBar)
 vim.keymap.set({ "n" }, "<leader>sp", search.project)
 vim.keymap.set({ "n" }, "<leader>st", search.text)
+vim.keymap.set({ "n" }, "<leader>sf", search.findReplace)
 vim.keymap.set({ "n" }, "gd", navigation.definition)
 vim.keymap.set({ "n" }, "gD", navigation.peekDefinition)
 vim.keymap.set({ "n" }, "g;", navigation.back)
