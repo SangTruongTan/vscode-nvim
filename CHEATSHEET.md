@@ -31,10 +31,6 @@
 | `k` | Visual Line Up | Move up by visual lines (`gk`) |
 | `s` | Paragraph Down | Jump to next paragraph (`}`) |
 | `S` | Paragraph Up | Jump to previous paragraph (`{`) |
-| `gd` | Go to Definition | Jump to symbol definition |
-| `gD` | Peek Definition | Open inline definition view |
-| `g;` | Jump Back | Move to previous cursor location |
-| `g,` | Jump Forward | Move forward in navigation history |
 
 ---
 
@@ -70,6 +66,10 @@
 |-----|--------|-------------|
 | `<leader>sr` | Find References | Show references to symbol |
 | `<leader>sR` | References Sidebar | Show references in sidebar |
+| `gd` | Go to Definition | Jump to symbol definition |
+| `gD` | Peek Definition | Open inline definition view |
+| `g;` | Jump Back | Move to previous cursor location |
+| `g,` | Jump Forward | Move forward in navigation history |
 | `<leader>sp` | Search Project | Search in files (with selection) |
 | `<leader>st` | Search Text | Search in files |
 | `<leader>sf` | Find & Replace | Open find/replace in editor |
@@ -238,6 +238,7 @@
 - `<leader>sr` for finding where symbols are used
 - `<leader>st` for text search across project
 - `<leader>sp` to search for currently selected text
+- `Ctrl+n` / `Ctrl+p` (or arrows) to move in popups/quick picks
 
 ---
 
