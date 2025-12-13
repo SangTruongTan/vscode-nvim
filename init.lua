@@ -381,6 +381,13 @@ vim.keymap.set({ "n" }, "zg", fold.allMarkerRegion)
 vim.keymap.set({ "n" }, "zG", fold.openAllMarkerRegion)
 vim.keymap.set({ "n" }, "za", fold.toggle)
 
+-- Insert mode navigation
+vim.keymap.set({ "i" }, "<C-h>", "<Left>", { noremap = true, silent = true })
+vim.keymap.set({ "i" }, "<C-j>", "<Down>", { noremap = true, silent = true })
+vim.keymap.set({ "i" }, "<C-k>", "<Up>", { noremap = true, silent = true })
+vim.keymap.set({ "i" }, "<C-l>", "<Right>", { noremap = true, silent = true })
+vim.keymap.set({ "i" }, "<C-a>", "<Home>", { noremap = true, silent = true })
+
 --Enable device clipboard
 vim.api.nvim_set_option("clipboard", "unnamedplus")
 

@@ -71,5 +71,35 @@
 		"key": "ctrl+shift+a",
 		"command": "workbench.action.terminal.new",
 		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "vscode-neovim.send",
+		"args": "<C-h>",
+		"when": "editorTextFocus && neovim.mode == 'insert'"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "vscode-neovim.send",
+		"args": "<C-j>",
+		"when": "editorTextFocus && neovim.mode == 'insert'"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "vscode-neovim.send",
+		"args": "<C-k>",
+		"when": "editorTextFocus && neovim.mode == 'insert'"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "vscode-neovim.send",
+		"args": "<C-l>",
+		"when": "editorTextFocus && neovim.mode == 'insert'"
+	},
+	{
+		"key": "ctrl+a",
+		"command": "vscode-neovim.send",
+		"args": "<C-a>",
+		"when": "editorTextFocus && neovim.mode == 'insert'"
 	}
 ]

@@ -5,6 +5,7 @@
 
 ## 📚 **Table of Contents**
 - [Navigation](#navigation)
+- [Insert Mode Navigation](#-insert-mode-navigation)
 - [File Operations](#file-operations)
 - [Buffer/Editor Management](#buffereditor-management)
 - [Search & References](#search--references)
@@ -31,6 +32,19 @@
 | `k` | Visual Line Up | Move up by visual lines (`gk`) |
 | `s` | Paragraph Down | Jump to next paragraph (`}`) |
 | `S` | Paragraph Up | Jump to previous paragraph (`{`) |
+
+---
+
+## ⌨️ **Insert Mode Navigation**
+
+| Key | Action | Description |
+|-----|--------|-------------|
+| `Ctrl+h` | Move Left | Move cursor left in insert mode |
+| `Ctrl+j` | Move Down | Move cursor down in insert mode |
+| `Ctrl+k` | Move Up | Move cursor up in insert mode |
+| `Ctrl+l` | Move Right | Move cursor right in insert mode |
+| `Ctrl+a` | Line Start | Jump to beginning of line in insert mode |
+| `Ctrl+e` | Line End | Jump to end of line in insert mode |
 
 ---
 
