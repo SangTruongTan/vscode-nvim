@@ -206,9 +206,7 @@
 
 | Key | Action | Description |
 |-----|--------|-------------|
-| `<Space>` | Which Key | Show available commands |
-| `<leader><Space>` | Command Palette | Open VSCode command palette |
-| `<leader>?` | Search Bindings | Search keybindings |
+| `<Space>` | Command Palette | Open VSCode command palette |
 
 ---
 
@@ -230,10 +228,6 @@
 ---
 
 ## 💡 **Tips & Tricks**
-
-### 🔄 **Which Key Integration**
-- Press `<Space>` and wait to see available commands
-- Most commands are grouped logically (f=file, g=git, b=buffer, etc.)
 
 ### 📋 **Clipboard Behavior**
 - Clipboard is shared between VSCode and Neovim

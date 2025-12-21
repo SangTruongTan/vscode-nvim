@@ -1,5 +1,5 @@
 # VSVim
-## Config file for [VSCode Neovim](https://github.com/vscode-neovim/vscode-neovim) and [whichkey](https://github.com/VSpaceCode/vscode-which-key) using [Lua](https://www.lua.org/)
+## Config file for [VSCode Neovim](https://github.com/vscode-neovim/vscode-neovim) using [Lua](https://www.lua.org/)
 
 ### Installation
 
@@ -33,7 +33,7 @@ Clone this repo into your `.config` folder and point VSCode Neovim config path t
 **Requirements**:
 
 - Have [Neovim](https://neovim.io/) in your machine.
-- Already install [VSCode Neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim), [Which Key](https://marketplace.visualstudio.com/items?itemName=VSpaceCode.whichkey), and [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) extensions in VSCode.
+- Already install [VSCode Neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim) and [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) extensions in VSCode.
 
 **Important Note**:
 

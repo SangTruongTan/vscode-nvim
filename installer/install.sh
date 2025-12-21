@@ -25,7 +25,7 @@ function main() {
 
   echo -e "${GREEN}Configuration files cloned successfully!${ENDCOLOR}"
   echo ""
-  
+
   # Ask user if they want automatic configuration
   read -p "Do you want to automatically merge settings and keybindings? (y/N): " -n 1 -r
   echo
@@ -38,7 +38,7 @@ function main() {
 
 function auto_configure() {
   echo -e "${GREEN}Starting automatic configuration...${ENDCOLOR}"
-  
+
   if command -v python3 &>/dev/null; then
     echo "Using Python auto-configuration script..."
     python3 "$VSN_BASE_DIR/installer/auto-config.py"
@@ -60,7 +60,6 @@ function manual_instructions() {
   echo ""
   echo -e "${YELLOW}Required Extensions:${ENDCOLOR}"
   echo "  - VSCode Neovim (asvetliakov.vscode-neovim)"
-  echo "  - Which Key (VSpaceCode.whichkey)"
   echo "  - Bookmarks (alefragnani.Bookmarks)"
 }
 
@@ -88,9 +87,9 @@ function clone_vscode_nvim() {
 function print_art() {
   cat <<'EOF'
   ...   ...   ...
-   ... ..... ... 
-    ..... .....  
-     ...   ...   
+   ... ..... ...
+    ..... .....
+     ...   ...
       .     .    Thank you for installing vscode-nvim!
 EOF
 }

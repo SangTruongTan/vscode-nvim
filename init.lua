@@ -1,9 +1,3 @@
-local whichkey = {
-	show = function()
-		vim.fn.VSCodeNotify("whichkey.show")
-	end,
-}
-
 local comment = {
 	selected = function()
 		vim.fn.VSCodeNotifyRange("editor.action.commentLine", vim.fn.line("v"), vim.fn.line("."), 1)
@@ -276,7 +270,7 @@ nv_keymap("<leader>a", "%")
 nx_keymap("j", "gj")
 nx_keymap("k", "gk")
 
-vim.keymap.set({ "n", "v" }, "<leader>", whichkey.show)
+vim.keymap.set({ "n", "v" }, "<leader> ", workbench.showCommands)
 vim.keymap.set({ "n", "v" }, "<leader>/", comment.selected)
 
 vim.keymap.set({ "n" }, "<leader>i", editor.organizeImport)
@@ -284,7 +278,6 @@ vim.keymap.set({ "n" }, "<leader>i", editor.organizeImport)
 -- no highlight
 vim.keymap.set({ "n" }, "<leader>n", "<cmd>noh<cr>")
 
-vim.keymap.set({ "n", "v" }, "<leader> ", workbench.showCommands)
 
 vim.keymap.set({ "n", "v" }, "H", workbench.previousEditor)
 vim.keymap.set({ "n", "v" }, "L", workbench.nextEditor)
