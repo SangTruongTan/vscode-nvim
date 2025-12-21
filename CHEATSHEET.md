@@ -45,6 +45,8 @@
 | `Ctrl+l` | Move Right | Move cursor right in insert mode |
 | `Ctrl+a` | Line Start | Jump to beginning of line in insert mode |
 | `Ctrl+e` | Line End | Jump to end of line in insert mode |
+| `Ctrl+n` | Next Option | Navigate to next option in autocomplete/popup menus |
+| `Ctrl+p` | Previous Option | Navigate to previous option in autocomplete/popup menus |
 
 ---
 

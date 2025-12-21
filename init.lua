@@ -388,6 +388,17 @@ vim.keymap.set({ "i" }, "<C-k>", "<Up>", { noremap = true, silent = true })
 vim.keymap.set({ "i" }, "<C-l>", "<Right>", { noremap = true, silent = true })
 vim.keymap.set({ "i" }, "<C-a>", "<Home>", { noremap = true, silent = true })
 
+-- Disable automatic comment formatting (especially when using 'o' to insert new line)
+-- 'o' = don't auto-insert comment leader when using 'o' or 'O'
+-- 'r' = don't auto-insert comment leader when pressing Enter in Insert mode
+-- Use autocommand to ensure it applies to all buffers (more reliable in vscode-neovim)
+vim.api.nvim_create_autocmd({ "FileType", "BufEnter", "BufWinEnter" }, {
+	pattern = "*",
+	callback = function()
+		vim.opt.formatoptions:remove({ "r", "o" })
+	end,
+})
+
 --Enable device clipboard
 vim.api.nvim_set_option("clipboard", "unnamedplus")
 
