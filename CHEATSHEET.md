@@ -167,6 +167,7 @@
 |-----|--------|-------------|
 | `<leader>ta` | Toggle Activity Bar | Show/hide activity bar |
 | `<leader>ts` | Toggle Sidebar | Show/hide sidebar |
+| `<leader>tc` | Toggle Chat | Show/hide chat panel |
 | `<leader>tz` | Toggle Zen Mode | Enter/exit zen mode |
 | `<leader>tt` | Theme Selector | Choose VSCode theme |
 

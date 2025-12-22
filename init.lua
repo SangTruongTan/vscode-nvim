@@ -83,6 +83,9 @@ local toggle = {
 	theme = function()
 		vim.fn.VSCodeNotify("workbench.action.selectTheme")
 	end,
+	toggleChat = function()
+		vim.fn.VSCodeNotify("workbench.action.chat.toggle")
+	end,
 }
 
 local symbol = {
@@ -322,6 +325,7 @@ vim.keymap.set({ "n", "v" }, "<leader>ta", toggle.toggleActivityBar)
 vim.keymap.set({ "n", "v" }, "<leader>tz", toggle.toggleZenMode)
 vim.keymap.set({ "n", "v" }, "<leader>ts", toggle.toggleSideBarVisibility)
 vim.keymap.set({ "n", "v" }, "<leader>tt", toggle.theme)
+vim.keymap.set({ "n", "v" }, "<leader>tc", toggle.toggleChat)
 
 -- refactor
 vim.keymap.set({ "n", "v" }, "<leader>rc", refactor.showCodeActions)
