@@ -154,6 +154,9 @@ local project = {
 	tree = function()
 		vim.fn.VSCodeNotify("workbench.view.explorer")
 	end,
+	openFolder = function()
+		vim.fn.VSCodeNotify("workbench.action.files.openFolder")
+	end,
 }
 
 local git = {
@@ -303,6 +306,7 @@ vim.keymap.set({ "n" }, "<leader>gg", git.graph)
 vim.keymap.set({ "n" }, "<leader>pf", project.findFile)
 vim.keymap.set({ "n" }, "<leader>pp", project.switch)
 vim.keymap.set({ "n" }, "<leader>pt", project.tree)
+vim.keymap.set({ "n" }, "<leader>po", project.openFolder)
 
 -- file
 vim.keymap.set({ "n", "v" }, "<space>w", file.save)

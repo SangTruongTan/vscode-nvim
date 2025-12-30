@@ -180,6 +180,7 @@
 | `<leader>pf` | Find File | Quick open file picker |
 | `<leader>pp` | Switch Project | Open recent projects |
 | `<leader>pt` | Project Tree | Show file explorer |
+| `<leader>po` | Open Folder | Open folder dialog |
 
 ---
 
