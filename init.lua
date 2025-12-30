@@ -399,4 +399,8 @@ vim.api.nvim_create_autocmd({ "FileType", "BufEnter", "BufWinEnter" }, {
 --Enable device clipboard
 vim.api.nvim_set_option("clipboard", "unnamedplus")
 
+-- Increase timeout for keybinding sequences (in milliseconds)
+-- Default is 1000ms, increase if you need more time between consecutive keybindings
+vim.o.timeoutlen = 500
+
 --#endregion keymap
