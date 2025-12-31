@@ -208,7 +208,7 @@
 
 | Key | Action | Description |
 |-----|--------|-------------|
-| `<Space>` | Command Palette | Open VSCode command palette |
+| `<leader>;` | Command Palette | Open VSCode command palette |
 
 ---
 

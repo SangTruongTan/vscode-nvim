@@ -276,7 +276,7 @@ nv_keymap("<leader>a", "%")
 nx_keymap("j", "gj")
 nx_keymap("k", "gk")
 
-vim.keymap.set({ "n", "v" }, "<leader> ", workbench.showCommands)
+vim.keymap.set({ "n", "v" }, "<leader>;", workbench.showCommands)
 vim.keymap.set({ "n", "v" }, "<leader>/", comment.selected)
 
 vim.keymap.set({ "n" }, "<leader>i", editor.organizeImport)
