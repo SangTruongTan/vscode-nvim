@@ -28,6 +28,11 @@
 | `<leader>h` | Go to Line Start | Jump to beginning of line (`^`) |
 | `<leader>l` | Go to Line End | Jump to end of line (`$`) |
 | `<leader>a` | Match Brackets | Jump to matching bracket (`%`) |
+| `%` | Match Brackets | Jump to matching bracket pair |
+| `[(` | Previous Bracket | Jump backward to previous `(` |
+| `[{` | Previous Brace | Jump backward to previous `{` |
+| `])` | Next Bracket | Jump forward to next `)` |
+| `]}` | Next Brace | Jump forward to next `}` |
 | `j` | Visual Line Down | Move down by visual lines (`gj`) |
 | `k` | Visual Line Up | Move up by visual lines (`gk`) |
 | `s` | Paragraph Down | Jump to next paragraph (`}`) |
