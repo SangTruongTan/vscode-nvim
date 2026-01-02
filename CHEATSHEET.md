@@ -123,7 +123,8 @@
 | `<leader>rd` | Delete Block | Delete current block/function |
 | `<leader>rv` | Select Block | Select current block/function |
 | `<leader>rh` | Show Hover | Show hover information/documentation |
-| `<leader>/` | Toggle Comment | Comment/uncomment selection |
+| `<leader>/` | Toggle Comment | Comment/uncomment selection (line comment) |
+| `<leader>*` | Block Comment | Toggle block/multiline comment for selection |
 
 ---
 

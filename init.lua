@@ -2,6 +2,10 @@ local comment = {
 	selected = function()
 		vim.fn.VSCodeNotifyRange("editor.action.commentLine", vim.fn.line("v"), vim.fn.line("."), 1)
 	end,
+	block = function()
+		-- Use block comment for multiline comments
+		vim.fn.VSCodeNotifyRange("editor.action.blockComment", vim.fn.line("v"), vim.fn.line("."), 1)
+	end,
 }
 
 local file = {
@@ -278,6 +282,7 @@ nx_keymap("k", "gk")
 
 vim.keymap.set({ "n", "v" }, "<leader>;", workbench.showCommands)
 vim.keymap.set({ "n", "v" }, "<leader>/", comment.selected)
+vim.keymap.set({ "n", "v" }, "<leader>*", comment.block)
 
 vim.keymap.set({ "n" }, "<leader>i", editor.organizeImport)
 
