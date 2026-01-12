@@ -33,7 +33,7 @@ Clone this repo into your `.config` folder and point VSCode Neovim config path t
 **Requirements**:
 
 - Have [Neovim](https://neovim.io/) in your machine.
-- Already install [VSCode Neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim) and [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) extensions in VSCode.
+- Already install [VSCode Neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim), [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks), and [Nvim UI Modifier](https://open-vsx.org/extension/JulianIaquinandi/nvim-ui-modifier) extensions in VSCode.
 
 **Important Note**:
 

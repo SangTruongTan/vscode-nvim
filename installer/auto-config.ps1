@@ -181,7 +181,8 @@ function Install-Keybindings {
 function Show-ExtensionRequirements {
     $requiredExtensions = @(
         "asvetliakov.vscode-neovim",
-        "alefragnani.Bookmarks"
+        "alefragnani.Bookmarks",
+        "JulianIaquinandi.nvim-ui-modifier"
     )
 
     Write-Host "`n📦 Required Extensions:" -ForegroundColor Yellow

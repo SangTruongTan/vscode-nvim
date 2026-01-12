@@ -35,6 +35,19 @@
     },
     "workbench.colorTheme": "Vim Dark Soft",
     "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    }
+        "asvetliakov.vscode-neovim": 1,
+        "JulianIaquinandi.nvim-ui-modifier": 1
+    },
+    "nvim-ui.nvimColorCustomizationKeys": [
+        "activityBarBadge.background",
+        "editorCursor.foreground",
+        "inputValidation.errorBorder",
+        "panel.border",
+        "panelTitle.activeBorder",
+        "panelTitle.activeForeground",
+        "peekView.border",
+        "peekViewTitleLabel.foreground",
+        "tab.activeBorder",
+        "statusBar.border"
+    ]
 }

@@ -61,6 +61,7 @@ function manual_instructions() {
   echo -e "${YELLOW}Required Extensions:${ENDCOLOR}"
   echo "  - VSCode Neovim (asvetliakov.vscode-neovim)"
   echo "  - Bookmarks (alefragnani.Bookmarks)"
+  echo "  - Nvim UI Modifier (JulianIaquinandi.nvim-ui-modifier)"
 }
 
 function check_system_deps() {

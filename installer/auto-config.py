@@ -141,7 +141,8 @@ def check_extensions():
     """Check if required extensions are installed."""
     required_extensions = [
         "asvetliakov.vscode-neovim",
-        "alefragnani.Bookmarks"
+        "alefragnani.Bookmarks",
+        "JulianIaquinandi.nvim-ui-modifier"
     ]
 
     print("\n📦 Required Extensions:")
