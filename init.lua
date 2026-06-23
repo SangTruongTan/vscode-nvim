@@ -140,6 +140,18 @@ local navigation = {
 	peekDefinition = function()
 		vim.fn.VSCodeNotify("editor.action.peekDefinition")
 	end,
+	declaration = function()
+		vim.fn.VSCodeNotify("editor.action.revealDeclaration")
+	end,
+	implementation = function()
+		vim.fn.VSCodeNotify("editor.action.goToImplementation")
+	end,
+	references = function()
+		vim.fn.VSCodeNotify("editor.action.goToReferences")
+	end,
+	typeDefinition = function()
+		vim.fn.VSCodeNotify("editor.action.goToTypeDefinition")
+	end,
 	back = function()
 		vim.fn.VSCodeNotify("workbench.action.navigateBack")
 	end,
@@ -358,6 +370,10 @@ vim.keymap.set({ "n" }, "<leader>st", search.text)
 vim.keymap.set({ "n" }, "<leader>sf", search.findReplace)
 vim.keymap.set({ "n" }, "gd", navigation.definition)
 vim.keymap.set({ "n" }, "gD", navigation.peekDefinition)
+vim.keymap.set({ "n" }, "gK", navigation.declaration)
+vim.keymap.set({ "n" }, "gi", navigation.implementation)
+vim.keymap.set({ "n" }, "gr", navigation.references)
+vim.keymap.set({ "n" }, "gy", navigation.typeDefinition)
 vim.keymap.set({ "n" }, "g;", navigation.back)
 vim.keymap.set({ "n" }, "g,", navigation.forward)
 
